@@ -1,19 +1,17 @@
 <template>
     <div>
-      <h2>{{ name }}</h2>
-      <p>{{ message }}</p>
+      <h2>{{ foodName }}</h2>
+      <p>{{ foodDesc }}</p>
     </div>
   </template>
   
   <script>
-  export default {
-    data() {
-      return {
-        name: 'Apples',
-        message: 'I like apples'
-      }
+    export default {
+      props: [
+        'foodName',
+        'foodDesc'
+      ]
     }
-  };
   </script>
   
   <style></style>
